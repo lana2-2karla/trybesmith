@@ -8,7 +8,7 @@ const getAllProductsController = async (req: Request, res: Response): Promise<Re
 
 const addProductsController = async (req: Request, res: Response): Promise<Response> => {
   const newProduct = await productsService.addProductsService(req.body);
-  return res.status(200).json(newProduct);
+  return res.status(201).json(newProduct);
 };
 
 export default {
