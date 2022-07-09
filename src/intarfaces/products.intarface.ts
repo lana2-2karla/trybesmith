@@ -1,4 +1,4 @@
-interface IProduct {
+export interface IProduct {
   id?: number;
   name: string;
   amount: string;
@@ -6,4 +6,4 @@ interface IProduct {
 }
 
 // 1 barra(orderId) - consulta: https://oieduardorabelo.medium.com/typescript-entendendo-a-nota%C3%A7%C3%A3o-de-tipos-9e8c1c89ef62
-export default IProduct;
+// export - consilta: https://www.typescriptlang.org/docs/handbook/modules.html
