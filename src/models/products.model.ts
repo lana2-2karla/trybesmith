@@ -1,6 +1,6 @@
 import { ResultSetHeader } from 'mysql2';
 import connection from './connection';
-import IProduct from '../intarfaces/products.intarface';
+import { IProduct } from '../intarfaces/products.intarface';
 
 const getAllProductsModel = async (): Promise<IProduct[]> => {
   const [rows] = await connection.execute(
