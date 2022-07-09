@@ -3,8 +3,8 @@ import * as Joi from 'joi';
 import HttpException from '../shared/http.exception';
 
 const productsValidate = Joi.object({
-  name: Joi.string().min(2).required(),
-  amount: Joi.string().min(2).required(),
+  name: Joi.string().min(3).required(),
+  amount: Joi.string().min(3).required(),
 });
 
 const productsValidateMiddleware = async (req: Request, res: Response, next: NextFunction) => {
